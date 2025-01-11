@@ -1,5 +1,6 @@
-// app/wink/layout.js
+// app/wink/[address]/layout.js
 import { Geist, Geist_Mono } from "next/font/google";
+import "../../globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -11,29 +12,28 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// Using generateMetadata for dynamic metadata based on the address parameter
 export async function generateMetadata({ params }) {
   const baseUrl = "https://donate-dynamic.vercel.app";
-  
+  const { address } = params;
+
   return {
     title: "Donate | Dynamic Payment",
     description: "Send donations easily with dynamic payment links",
     metadataBase: new URL(baseUrl),
-    // Twitter specific meta tags for Player Card
     other: {
       'twitter:card': 'player',
-      'twitter:site': '@UltimateDigits', 
+      'twitter:site': '@YourTwitterHandle',
       'twitter:title': 'Dynamic Payment Link',
       'twitter:description': 'Send donations easily with dynamic payment links',
-      'twitter:player': `${baseUrl}/wink/${params.address}`,
+      'twitter:player': `${baseUrl}/wink/${address}`,
       'twitter:player:width': '360',
       'twitter:player:height': '560',
-      'twitter:image': 'https://res.cloudinary.com/dg8ssfxu3/image/upload/v1722584912/ud/y6uypvxozxsutmrkhot0.png', 
+      'twitter:image': 'YOUR_PREVIEW_IMAGE_URL',
     },
   };
 }
 
-export default function WinkLayout({ children }) {
+export default function AddressLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
