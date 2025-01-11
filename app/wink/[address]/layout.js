@@ -28,7 +28,7 @@ export async function generateMetadata({ params }) {
       'twitter:player': `${baseUrl}/wink/${address}`,
       'twitter:player:width': '360',
       'twitter:player:height': '560',
-      'twitter:image': 'YOUR_PREVIEW_IMAGE_URL',
+      'twitter:image': 'https://res.cloudinary.com/dg8ssfxu3/image/upload/v1722584912/ud/y6uypvxozxsutmrkhot0.png',
     },
   };
 }
