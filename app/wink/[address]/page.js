@@ -6,7 +6,7 @@ import { useParams } from "next/navigation";
 export default function DonationPage() {
   const params = useParams();
   const [amount, setAmount] = useState("");
-  const recipientAddress = params.address;
+  const recipientAddress = params.address || "";
 
   const handleDonate = () => {
     if (!amount) return;
@@ -21,7 +21,7 @@ export default function DonationPage() {
           <div className="mb-6">
             <div className="mb-2">Recipient's wallet address</div>
             <input
-              className="w-full p-2 bg-transparent border border-customGrayStroke placeholder-slate-500 rounded cursor-not-allowed opacity-75"
+              className="w-full p-2 bg-transparent border border-customGrayStroke placeholder-slate-500 rounded cursor-not-allowed opacity-75 text-sm"
               value={recipientAddress}
               disabled
             />
