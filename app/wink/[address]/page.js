@@ -44,6 +44,7 @@ export default function DonationPage() {
           >
             Donate
           </button>
+          <p className=" text-center pt-4">Powered by winks.fun</p>
         </div>
       </div>
     </div>

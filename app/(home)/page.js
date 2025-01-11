@@ -42,7 +42,7 @@ export default function Home() {
           >
             Generate Link
           </button>
-          
+
           {generatedLink && (
             <div className="mt-4">
               <div className="bg-black/20 p-2 rounded break-all">
@@ -56,6 +56,7 @@ export default function Home() {
               </button>
             </div>
           )}
+          <p className=" text-center pt-4">Powered by winks.fun</p>
         </div>
       </div>
     </div>
