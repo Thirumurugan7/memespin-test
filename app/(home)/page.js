@@ -43,7 +43,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-t from-customStart to-customEnd/50 font-mono">
+    <div className="min-h-screen bg-gradient-to-t from-customStart to-customEnd/50 font-mono text-white">
       <div className="flex justify-center items-center min-h-screen max-w-[500px] mx-auto">
         <div className="bg-customGrayFill/50 h-fit rounded w-full p-10">
           <div>
