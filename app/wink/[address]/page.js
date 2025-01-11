@@ -11,7 +11,7 @@ export default function DonationPage() {
   const [isLoading, setIsLoading] = useState(false);
   const recipientAddress = params.address || "";
 
-  // Get wallet connection status
+  // Get wallet connection 
   const { isConnected } = useAccount();
   
   // Transaction hooks
