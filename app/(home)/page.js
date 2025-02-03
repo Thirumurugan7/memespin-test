@@ -27,7 +27,7 @@ export default function Home() {
 
   const generateLink = () => {
     if (!address || !isValidAddress) return;
-    const link = `https://donate-dynamic.vercel.app/wink/${address}`;
+    const link = `http://localhost:3000/wink/${address}`;
     setGeneratedLink(link);
   };
 
