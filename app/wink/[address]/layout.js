@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export async function generateMetadata({ params }) {
-  const baseUrl = "https://memespin-test.vercel.app/";
+  const baseUrl = "https://memespin-test.vercel.app";
   const { address } = params;
 
   return {
