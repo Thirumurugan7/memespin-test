@@ -22,7 +22,7 @@ export async function generateMetadata() {
       'twitter:site': '@UltimateDigits',
       'twitter:title': 'Metis Wink by winks.fun',
       'twitter:description': 'Donate crypto on X.',
-      'twitter:player': 'https://donate-dynamic.vercel.app',
+      'twitter:player': 'https://memespin-test.vercel.app/',
       'twitter:player:width': '360',
       'twitter:player:height': '560',
       'twitter:image': 'https://res.cloudinary.com/dg8ssfxu3/image/upload/v1722584912/ud/y6uypvxozxsutmrkhot0.png',
